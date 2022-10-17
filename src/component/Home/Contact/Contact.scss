@@ -1,0 +1,99 @@
+@import "./../../../index.scss";
+
+.contact {
+  h2 {
+    @include heading;
+    padding-top: 20px;
+  }
+  > p {
+    text-align: center;
+    color: #777;
+    margin: 20px 0px;
+  }
+  .contentConta {
+    margin: 90px 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px 0;
+    .information {
+      h4 {
+        margin: 20px 0px;
+      }
+      p {
+        color: #777;
+        margin-top: 10px;
+      }
+    }
+    .inputs {
+      .row1 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(47%, 1fr));
+        gap: 20px;
+        input {
+          padding: 10px;
+          outline: none;
+        }
+      }
+      .row2 {
+        input {
+          padding: 10px;
+          margin-top: 20px;
+          width: 100%;
+        }
+      }
+      .row3 {
+        textarea {
+          padding: 10px;
+          width: 100%;
+          margin-top: 20px;
+          height: 100px;
+          outline: none;
+        }
+      }
+      .row4 {
+        width: 100%;
+        button {
+          float: right;
+          padding: 10px 20px;
+          background-color: #fb3e3e;
+          color: white;
+          margin-top: 10px;
+          border-radius: 5px;
+          border: none;
+          cursor: pointer;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          -ms-border-radius: 5px;
+          -o-border-radius: 5px;
+        }
+      }
+    }
+  }
+
+  .soci {
+    background-color: #f8f9fa;
+    padding: 40px;
+    .social {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px 0;
+      .socialmedia1 {
+        i {
+          margin-right: 20px;
+          font-size: 30px;
+        }
+      }
+      .socialmedia2 {
+        h5 {
+          display: inline-block;
+          margin-right: 30px;
+          font-size: 20px;
+        }
+        i {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
